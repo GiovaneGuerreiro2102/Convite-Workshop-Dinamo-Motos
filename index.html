@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para o Workshop da Dinamo Motos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #003366;
+        }
+        p {
+            font-size: 18px;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0055b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Convite para o Workshop da Dinamo Motos</h1>
+        <p>Olá, você está convidado para participar do workshop da Dinamo Motos, que ocorrerá no dia 14 de junho de 2025, das 09h às 12h, na nossa oficina, localizada na Rua 1A, 1170, Vila Saibreiro, RIo Claro - SP.</p>
+        <p>Por favor, confirme sua presença abaixo. As vagas são limitadas.</p>
+        
+        <!-- Formulário de Confirmação -->
+        <div class="form-container">
+            <form action="https://formspree.io/f/xwplalkl" method="POST">
+                <!-- Campo Nome Completo -->
+                <input type="text" name="nome" placeholder="Nome Completo" required>
+
+                <!-- Campo Email -->
+                <input type="email" name="email" placeholder="Email" required>
+
+                <!-- Campo Número de Telefone -->
+                <input type="tel" name="telefone" placeholder="Número de Telefone" required>
+
+                <!-- Campo Número de Acompanhantes -->
+                <input type="number" name="acompanhantes" placeholder="Número de Acompanhantes" min="0" required>
+
+                <!-- Botão de Envio -->
+                <button type="submit">Confirmar Presença</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
